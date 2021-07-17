@@ -1,31 +1,42 @@
 ---
 theme: seriph
-background: https://source.unsplash.com/collection/94734566/1920x1080u
+background: https://source.unsplash.com/1920x1080?abstract,blue
 class: text-center
 highlighter: shiki
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
+  ## Vue Masterclass to Develop Real-life Web Applications
+  
+  ### Details:
+  From July 31st
 
-  Learn more at [Sli.dev](https://sli.dev)
-title: Welcome to Slidev
+  Every Saturday and Sunday at 7.30 pm
+
+  ### Trainer:
+  Mir Ayman Ali
+  
+  Senior Software Engineer
+
+  Learn more at [upskill.com.bd](https://upskill.com.bd/workshop/253)
+
+title: Vue Masterclass | Preview
 ---
+<div class="flex justify-center">
+  <logos-vue class="text-6xl" />
+</div>
+ 
 
-# Welcome to Slidev
+# <span> Vue Masterclass <small>(with Ayman)</small> </span>
 
 Presentation slides for developers
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
+    Let's Begin <carbon:arrow-right class="inline"/>
   </span>
 </div>
 
 <div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
+  <a href="https://github.com/alimirayman/upskill-vue-initial" target="_blank" alt="GitHub"
     class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
   </a>
@@ -36,94 +47,90 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
+layout: cover
 
-# What is Slidev?
+---
+<div class="flex justify-center">
+  <div class="rounded-full h-32 w-32 flex items-center justify-center bg-cover" style="background-image: url('https://avatars.githubusercontent.com/u/3832930?v=4')">
+  </div>
+</div>
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+## Mir Ayman Ali
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
+<div class="flex justify-center gap-2">
+  <a href="https://github.com/alimirayman" target="_blank" alt="GitHub"
+    class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
+    <carbon-logo-github />
+  </a>
+  <a href="https://www.linkedin.com/in/alimirayman/" target="_blank" alt="LinkedIn"
+    class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
+    <carbon-logo-linkedin />
+  </a>
+</div>
+
+
+
+
+---
+
+<div class="flex justify-start align-center"> 
+  <h1>Why Vue JS?</h1>
+  <logos-vue class="text-4xl pl-3" />
+</div>
+
+The Progressive JavaScript Framework
+
+- 🚀 **Easier Learning Curve** - Easy to get in, learn and Impliment
+- 🤡 **Simple** - Easy to use
+- 📝 **Awesome Documentation** - Can learn just by going through the docs
+- ⚡️ **High Performance** - Page loads very fast 😜
+- 👥 **Vibrant Community** - Huge communnity so you don't feel stuck
+- 🕸 **SPA / SSR** - Single Page Application & Server Side Renderinng
 
 <br>
 <br>
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-</style>
+Read more about [Vue](https://vuejs.org/)
 
 ---
 
-# Navigation
+# Why this Course?
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
+- Learn deep into frontend
+- Potential job opportunity
+- Learn from a prefessional
 
-### Keyboard Shortcuts
-
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
-
-<!-- https://sli.dev/guide/animations.html#click-animations -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+<br>
+<br>
 
 ---
-layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
+layout: section
 ---
 
 # Code
 
-Use code snippets and get the highlighting directly![^1]
+---
 
-```ts {all|2|1-6|9|all}
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
+# Basic Vue File (.vue)
+
+```html {all|1-3|4-7|9-12|all}
+<template>
+  <!-- html -->
+</template>
+
+<script>
+export default {
+// JS
 }
-
-function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = {...user, ...update}  
-  saveUser(id, newUser)
-}
-```
-
-<arrow v-click="3" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
-
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
+</script>
 
 <style>
-.footnotes-sep {
+/* CSS */
+</style>
+```
+
+<style>
+/* .footnotes-sep {
   @apply mt-20 opacity-10;
 }
 .footnotes {
@@ -131,8 +138,55 @@ function updateUser(id: number, update: User) {
 }
 .footnote-backref {
   display: none;
-}
+} */
 </style>
+
+---
+
+# Basic Vue File (.vue)
+
+```html 
+<div class="flex justify-around mt-6 text-sm mx-20">
+  <div class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 p-2 rounded" v-click>
+    Senior Software Engineer
+    @
+    <a href="https://www.obviously.ai/" target="_blank">Obviously.ai</a>
+  </div>
+  <div class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 p-2 rounded" v-click>
+    Co-Founder | CEO
+    @
+    <a href="https://shastho.ai/" target="_blank">Shastho.ai</a>
+  </div>
+</div>
+```
+
+<div class="flex justify-around text-sm mx-20">
+  <div class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 p-2 rounded" >
+    Senior Software Engineer
+    @
+    <a href="https://www.obviously.ai/" target="_blank">Obviously.ai</a>
+  </div>
+  <div class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 p-2 rounded" >
+    Co-Founder | CEO
+    @
+    <a href="https://shastho.ai/" target="_blank">Shastho.ai</a>
+  </div>
+</div>
+
+<style>
+/* .footnotes-sep {
+  @apply mt-20 opacity-10;
+}
+.footnotes {
+  @apply text-sm opacity-75;
+}
+.footnote-backref {
+  display: none;
+} */
+</style>
+
+---
+# Basic Vue File (.vue)
 
 ---
 
@@ -158,10 +212,10 @@ Check out [the guides](https://sli.dev/builtin/components.html) for more.
 <div>
 
 ```html
-<Tweet id="1390115482657726468" />
+<Tweet id="1407635397887287298" />
 ```
 
-<Tweet id="1390115482657726468" scale="0.65" />
+<Tweet id="1407635397887287298" scale="0.65" />
 
 </div>
 </div>
