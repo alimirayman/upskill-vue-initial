@@ -5,6 +5,10 @@ const props = defineProps({
   count: {
     default: 0,
   },
+  offset: {
+    type: Number,
+    default: 1
+  },
 })
 
 const counter = ref(props.count)
@@ -18,7 +22,7 @@ const counter = ref(props.count)
       font="mono"
       outline="!none"
       hover:bg="gray-400 opacity-20"
-      @click="counter -= 1"
+      @click="counter -= +offset"
     >
       -
     </button>
@@ -29,7 +33,7 @@ const counter = ref(props.count)
       font="mono"
       outline="!none"
       hover:bg="gray-400 opacity-20"
-      @click="counter += 1"
+      @click="counter += +offset"
     >
       +
     </button>
