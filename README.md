@@ -1,5 +1,9 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Welcome to Vue Mastercalass (Initial Breafing) 
 
+### [Slide Show](https://mirayman.com/upskill-vue-initial)
+
+
+### If you want to run presentation localy
 To start the slide show:
 
 - `npm install`
